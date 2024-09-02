@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="halloween linkfree linktree template spooky minimalist">
+    <meta name="author" content="Darshan K S">
+    <title>D1shop templates</title>
+              <!-- Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/title.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1c591452af.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <img id="userPhoto" src="https://dyaa-edin.netlify.app/img/web.webp" alt="User Photo">
+    <h1 class=" h1 editable" id="userName"><span style="font-family: Arial;">@</span>DarshanKS</h1>
+
+    <div id="links">
+        <a class="link editable" href="#" target="_blank">instagram</a>
+        <a class="link editable" href="#" target="_blank">facebook</a>
+        <a class="link editable" href="#" target="_blank">YouTube</a>
+        <a class="link editable" href="#" target="_blank">twitter</a>
+    </div>
+
+    <div class="footer">
+        <a href="#" target="_blank">
+            <i style="line-height: 38px;" class="fa fa-instagram circulo" aria-hidden="true"></i>
+        </a>
+        <a href="#" target="_blank">
+            <i style="line-height: 38px;" class="fa fa-facebook-f circulo" aria-hidden="true"></i>
+        </a>
+        <a href="#" target="_blank">
+            <i style="line-height: 38px;" class="fa fa-linkedin circulo" aria-hidden="true"></i>
+        </a>
+        <a href="#" target="_blank">
+            <i style="line-height: 38px;" class="fa fa-whatsapp circulo" aria-hidden="true"></i>
+        </a>
+    </div>
+<div class="water-mark-continer">
+  <p class="water-mark-title">developed by</p>
+<div class="water-mark-section">
+  <div class="water-mark bx-spin">
+    <a href="https://d1shop.web.app" class="D1">D1</a>
+  </div>
+            <a href="https://d1shop.web.app" class="logo-text">Shop</a>
+        </div>
+        </div>
+
+    <script src="js/script.js"></script>
+    <!-- Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      // تحديد جميع العناصر القابلة للتعديل
+const editableElements = document.querySelectorAll('.editable');
+
+// إضافة حدث النقر لتغيير النص
+editableElements.forEach(element => {
+  element.addEventListener('click', function() {
+    // طلب النص الجديد من المستخدم
+    const newText = prompt('أدخل النص الجديد:', this.textContent);
+    
+    // إذا تم إدخال نص جديد، قم بتحديث النص الحالي
+    if (newText !== null) {
+      this.textContent = newText;
+    }
+  });
+});
+
+    </script>
+</body>
+</html>

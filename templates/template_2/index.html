@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>D1shop templates</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <img id="userPhoto" src="https://dyaa-edin.netlify.app/img/web.webp" alt="Beldi">
+
+ <div id="links">
+    <a id="userName" class="editable">@ your name</a>
+    <a class="link editable" href="#" target="_blank">Instagram</a>
+    <a class="link editable" href="#" target="_blank">Facebok</a>
+    <a class="link editable" href="#" target="_blank">Twitter</a>
+    <a class="link editable" href="#" target="_blank">discord</a>
+ </div>
+ 
+
+<div class="water-mark-continer">
+  <p class="water-mark-title">developed by</p>
+<div class="water-mark-section">
+  <div class="water-mark bx-spin">
+    <a href="https://d1shop.web.app" class="D1">D1</a>
+  </div>
+            <a href="https://d1shop.web.app" class="logo-text">Shop</a>
+        </div>
+        </div>
+
+
+    <!-- Javascript -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script>
+      // تحديد جميع العناصر القابلة للتعديل
+const editableElements = document.querySelectorAll('.editable');
+
+// إضافة حدث النقر لتغيير النص
+editableElements.forEach(element => {
+  element.addEventListener('click', function() {
+    // طلب النص الجديد من المستخدم
+    const newText = prompt('أدخل النص الجديد:', this.textContent);
+    
+    // إذا تم إدخال نص جديد، قم بتحديث النص الحالي
+    if (newText !== null) {
+      this.textContent = newText;
+    }
+  });
+});
+    </script>
+    <script  src="index.js"></script>
+</body>
+</html>
