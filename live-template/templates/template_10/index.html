@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D1shop templates</title>
+      <!-- Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+    html{
+      margin: 0;
+      padding: 0;
+      overflow: auto;
+    }
+       body {
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1c1c1c, #121212);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+.water-mark-section {
+    background-color: #ffffffa7;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.water-mark-continer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #111;
+    margin-left: 8px;
+    text-decoration: none;
+}
+.water-mark{
+  width: 50px;
+  height: 50px;
+  background-color: #fc2;
+  border-radius: 20%;
+  border: 2px solid #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: -3rem;
+}
+.D1{
+  color: #111;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+.water-mark-title{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3.46rem;
+    color: #666;
+    font-size: 1.4rem;
+}
+
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            width: 90%;
+            margin-top: -6rem;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #ffffff;
+            margin-bottom: 20px;
+        }
+
+
+        h1 {
+            color: #00aeef;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #bbbbbb;
+            margin-bottom: 25px;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .social-link {
+            text-decoration: none;
+            color: #ffffff;
+            background: linear-gradient(135deg, #ff9500, #ff7700);
+            padding: 15px 0;
+            border-radius: 30px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: transform 0.2s ease, background 0.3s ease;
+        }
+
+        .social-link i {
+            font-size: 18px;
+        }
+
+        .social-link:hover {
+            background: linear-gradient(135deg, #ff7700, #ff9500);
+            transform: translateY(-5px);
+        }
+        @media (max-width: 900px){
+          .container {
+            max-width: 280px;
+          }
+        }
+    </style>
+    <!-- استيراد أيقونات من مكتبة Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://dyaa-edin.netlify.app/img/web.webp" alt="صورة الملف الشخصي" class="profile-img">
+        <h1 class="editable">@your name </h1>
+        <p class="editable">  السلام عليكم و رحمة الله و بركاته<br> يمكنك كتابة أي شيء هنا   </p>
+
+        <div class="social-links">
+            <a href="#e" class="social-link editable" target="_blank"><i class="fab fa-twitter"></i> تويتر</a>
+            <a href="#" class="social-link editable" target="_blank"><i class="fab fa-facebook-f"></i> فيسبوك</a>
+            <a href="#" class="social-link editable" target="_blank"><i class="fab fa-instagram"></i> إنستغرام</a>
+            <a href="#" class="social-link editable" target="_blank"><i class="fab fa-linkedin-in"></i> لينكدإن</a>
+        </div>
+    </div>
+    <div class="water-mark-continer">
+  <p class="water-mark-title">developed by</p>
+<div class="water-mark-section">
+  <div class="water-mark bx-spin">
+    <a href="https://d1shop.web.app" class="D1">D1</a>
+  </div>
+            <a href="https://d1shop.web.app" class="logo-text">Shop</a>
+        </div>
+        </div>
+        <br><br>
+        <br><br>
+        <br><br>
+    <!-- Javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      // تحديد جميع العناصر القابلة للتعديل
+const editableElements = document.querySelectorAll('.editable');
+
+// إضافة حدث النقر لتغيير النص
+editableElements.forEach(element => {
+  element.addEventListener('click', function() {
+    // طلب النص الجديد من المستخدم
+    const newText = prompt('أدخل النص الجديد:', this.textContent);
+    
+    // إذا تم إدخال نص جديد، قم بتحديث النص الحالي
+    if (newText !== null) {
+      this.textContent = newText;
+    }
+  });
+});
+
+    </script>
+</body>
+</html>
