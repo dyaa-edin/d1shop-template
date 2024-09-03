@@ -1,4 +1,4 @@
-  const cards = document.querySelectorAll('.card-live-view');
+  const cards = document.querySelectorAll('.card');
   const iframes = document.querySelectorAll('iframe');
 
   cards.forEach(card => {
